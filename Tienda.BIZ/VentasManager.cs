@@ -26,9 +26,6 @@ namespace Tienda.BIZ
             DateTime rFin = new DateTime(fin.Year, fin.Month, fin.Day, 0, 0, 0).AddDays(1);
             return repository.Query(ValueTuple => v.FechaHora >= rInicio && v.FechaHora < rFin);
         }
-
-
-
-
+    
     }
 }
